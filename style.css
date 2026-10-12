@@ -1,0 +1,58 @@
+
+html{
+    
+    padding:0;
+    margin-top: 200px;
+    background-image: url('bg.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.fisher{
+    animation-duration: 4s;
+    animation-name: 'fisher';
+    position: absolute;
+    top:-30px;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fisher{
+    from {
+transform: translateX(-10vw);
+    }
+    to{
+        transform: translateX(110vw);
+    }
+}
+.fish{
+    width:1000px;
+margin-top: 1000px;
+    margin-right:0px;
+    animation-duration: 6s;
+    animation-name: fish;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes fish{
+    0%{
+        transform:rotateY(190deg);
+    }
+  
+    25%{
+        transform: translateX(100vw) rotateZ(30deg) ;
+
+       
+    }
+    70%{
+        transform: rotateY(180deg);
+    }
+90%{
+    transform: rotateX(180deg) translateX(-30vw) ;
+  
+}
+100%{
+      transform: rotateX(-180deg);
+}
+}
